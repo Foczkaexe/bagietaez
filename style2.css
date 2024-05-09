@@ -1,0 +1,38 @@
+::-webkit-scrollbar {
+	display: none;
+}
+
+:root {
+    --gradient: linear-gradient(90deg, #003cff, #3b89ff, #7bbfff);
+}
+
+body {
+    font-family: 'Archivo Black', sans-serif;
+    min-height: 100vh;
+    line-height: 0.5;
+    color: white;
+    background: #ddd;
+    background-size: 300%;
+    background-image: var(--gradient);
+    animation: bg-animation 9s infinite;
+}
+
+@keyframes bg-animation {
+    0% {background-position: left}
+    50% {background-position: right}
+    100% {background-position: left}
+}
+
+.titlefaq {
+    font-size: 50px;
+    color: black;
+}
+
+.pytanie {
+    color: black;
+}
+
+.odpowiedx {
+    font-size: 20px;
+    color: #06080f;
+}
